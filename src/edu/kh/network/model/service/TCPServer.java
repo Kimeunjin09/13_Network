@@ -94,6 +94,7 @@ public class TCPServer {
 			
 			// 사용한 스트림, 소켓 자원을 모두 반환(close)	
 			try {
+				
 				// 보조스트림 close시 연결된 기반스트림(is,os)도 같이 close됨
 				if(pw != null) pw.close();
 				if(br != null) br.close();
